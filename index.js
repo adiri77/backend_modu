@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://frontend-modu.onrender.com",
     methods: ["GET", "POST"]
   }
 });
@@ -21,7 +21,7 @@ const io = socketIo(server, {
 app.use(helmet());
 app.use(morgan('combined'));
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://frontend-modu.onrender.com',
   credentials: true
 }));
 app.use(express.json());
@@ -444,7 +444,7 @@ const PORT = process.env.PORT || 5000;
 
 server.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
-  console.log(`📱 Frontend should be running on http://localhost:3000`);
+  console.log(`📱 Frontend should be running on https://frontend-modu.onrender.com`);
   console.log(`🔧 API available at http://localhost:${PORT}/api`);
 });
 
