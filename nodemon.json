@@ -1,0 +1,19 @@
+{
+  "watch": ["index.js", "package.json"],
+  "ignore": [
+    "python_bridge.py",
+    "*.py",
+    "*.pyc",
+    "simple_test.js",
+    "test_*.js",
+    "node_modules/**/node_modules",
+    "../**/*",
+    "**/node_modules/**",
+    "*.log"
+  ],
+  "ext": "js,json",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "delay": 2000
+} 

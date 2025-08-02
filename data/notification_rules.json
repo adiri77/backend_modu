@@ -1,0 +1,42 @@
+[
+  {
+    "id": "morning_briefing",
+    "name": "Morning Briefing",
+    "trigger_condition": "daily_08:00",
+    "notification_type": "system_status",
+    "priority": "medium",
+    "message_template": "\ud83c\udf05 **Good Morning!** Here's your daily briefing:\n\n\u2022 Weather forecast for today\n\u2022 Upcoming calendar events\n\u2022 Important emails\n\u2022 System status",
+    "is_active": true,
+    "user_id": null
+  },
+  {
+    "id": "weather_alerts",
+    "name": "Weather Alerts",
+    "trigger_condition": "weather_change_significant",
+    "notification_type": "weather_alert",
+    "priority": "high",
+    "message_template": "\ud83c\udf26\ufe0f **Weather Alert:** Significant weather changes detected. Check the forecast for planning.",
+    "is_active": true,
+    "user_id": null
+  },
+  {
+    "id": "email_digest",
+    "name": "Email Digest",
+    "trigger_condition": "daily_17:00",
+    "notification_type": "email_alert",
+    "priority": "low",
+    "message_template": "\ud83d\udce7 **Daily Email Summary:** You have {unread_count} unread emails. Important messages require attention.",
+    "is_active": true,
+    "user_id": null
+  },
+  {
+    "id": "weekend_prep",
+    "name": "Weekend Preparation",
+    "trigger_condition": "friday_16:00",
+    "notification_type": "task_reminder",
+    "priority": "medium",
+    "message_template": "\ud83c\udf89 **Weekend Prep:** Review your week's accomplishments and prepare for next week.",
+    "is_active": true,
+    "user_id": null
+  }
+]
