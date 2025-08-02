@@ -11,7 +11,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://frontend-modu.onrender.com",
     methods: ["GET", "POST"]
   }
 });
@@ -20,7 +20,7 @@ const io = socketIo(server, {
 app.use(helmet());
 app.use(morgan('combined'));
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://frontend-modu.onrender.com',
   credentials: true
 }));
 app.use(express.json());
